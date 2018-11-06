@@ -1,13 +1,13 @@
 # TRGN510-Fall-2018-Final-Project
 Final project
-## Project Description:##
+## Project Description:
 Acute Myeloid Leukemia (AML) is a devastating hematologic malignancy that affects the hematopoietic stem cells. Less than 30% of patients with AML achieve 5-year overall survival (OS), highlighting the urgent need to identify new therapeutic targets. We analyzed gene expression datasets (GSE1159, GSE7186, GSE13159, GSE13164, GSE995, GSE31174 and TCGA) for genes that are differently overexpressed in AML. We also found in patient samples that APOC2 was consistently upregulated in AML compared with healthy PBMCs (peripheral blood mononuclear cells). Our in vivo and in vitro experiments also show that APOC2 expression level is associated with the cell proliferation, cell migration, and the cell apoptosis. The aim of this project is to look through 3 different high-quality cohorts and conduct analysis with the data to 
 
   1.	Study the downstream signaling pathway that are activated/inhibited by the APOC2 expression alternation and associated with the phenotypes we found out.
 
   2.	Look at the APOC2 gene upstream genomic alternation in AML to see if it’s associated with the MLL rearrangement.
   
-## Datasets:##
+## Datasets:
   ### 1.	TCGA (200 cases)
     Repositories
     Data Category：Transcriptome profiling data
@@ -29,7 +29,7 @@ https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22projectCode%22:%7B
   ### 4.	LAML-US/CN/KR
 https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22specimenType%22:%7B%22is%22:%5B%22Primary%20Blood%20Derived%20Cancer%20-%20Peripheral%20Blood%22%5D%7D,%22projectCode%22:%7B%22is%22:%5B%22LAML-US%22%5D%7D%7D%7D&files=%7B%22from%22:1,%22size%22:25%7D
 
-## Proposed Analysis:##
+## Proposed Analysis:
 Looking in at least 3 different high-quality studies, in each study; 
 
 (First level UI: choose which dataset)
