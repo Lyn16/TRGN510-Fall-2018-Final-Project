@@ -15,7 +15,7 @@ Acute Myeloid Leukemia (AML) is a devastating hematologic malignancy that affect
       HTSeq-Count/FPKM/FPKM-UQ
 https://portal.gdc.cancer.gov/repository?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22Biospecimen%22%2C%22Clinical%22%2C%22Combined%20Nucleotide%20Variation%22%2C%22Copy%20Number%20Variation%22%2C%22DNA%20Methylation%22%2C%22Raw%20Sequencing%20Data%22%2C%22Simple%20Nucleotide%20Variation%22%2C%22Transcriptome%20Profiling%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Gene%20Expression%20Quantification%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.experimental_strategy%22%2C%22value%22%3A%5B%22RNA-Seq%22%5D%7D%7D%5D%7D
 
-   ### 2.	TARGET (156 CASES)
+   ### 2.	TARGET (156 cases)
     Repositories
     Data Category：Transcriptome profiling data
     What’s the different in Workflow type？
@@ -29,7 +29,7 @@ https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22projectCode%22:%7B
   ### 4.	LAML-US/CN/KR
 https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22specimenType%22:%7B%22is%22:%5B%22Primary%20Blood%20Derived%20Cancer%20-%20Peripheral%20Blood%22%5D%7D,%22projectCode%22:%7B%22is%22:%5B%22LAML-US%22%5D%7D%7D%7D&files=%7B%22from%22:1,%22size%22:25%7D
 
-## Proposed Analysis:
+## Proposed Analysis
 Looking in at least 3 different high-quality studies, in each study; 
 
 (First level UI: choose which dataset)
@@ -47,5 +47,7 @@ Looking in at least 3 different high-quality studies, in each study;
     (1). To associate the APOC2 expression alternation with frequent mutant genes (11 genes) in AML. (The genes are FLT3, TP53, WT1, IDH1, IDH2, CEBPA, RUNX1, NRAS, TET2, NPMI, DNMT3A) (gene wild type vs mutant, compare the expression level of APOC2) 
     (2). To associate the APOC2 gene expression alternation with MLL rearrangement (looking for patients’ clinical data) MLL rearrangement vs. no rearrangement compare the expression level of APOC2)
 
-   ### 4.	Conclusion:
-  Gene regulation signature of the three datasets and 
+   ### 4.	Conclusion
+  Gene regulation signature of the three datasets
+  OR
+  Use Venn graph to show the regulated genes in three different datasets; and presented as bar graph to show the fold change.
