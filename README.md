@@ -34,15 +34,19 @@ Looking in at least 3 different high-quality studies, in each study;
 
 (First level UI: choose which dataset)
 
-  ### 1.	Heatmap and Hierarchical clustering.
+DC: You need to identify and label your samples based on expression level of APOC.  
+
+  ### 1.	Hierarchical clustering ON SAMPLES (GROUPS THAT YOU DIDN'T EXIST)
   (Compare Top 25% of APOC2 expression level population with Bottom 25% APOC2 expression level population.)
     (1). To study the downstream signaling pathway that are activated/inhibited by the APOC2 expression alternation in AML.
     (2). To look at the APOC2 gene upstream genomic alternation in AML.
 
   ### 2.	Conduct a PCA for each dataset to show that some components control the expression level of APOC2 (maybe not)
    (Group setting: Top 25% of APOC2 expression level population; bottom 25% APOC2 expression level population; The rest of the population.)
+   
+   above HERE - IS QC TO MAKE SURE THERE ARE NO ARTIFACTS, REMOVE OR ADJUST FOR ANY (ETHNCIITY, OR SOMETHING ELSE, AND TAKE REMAINING SAMPLES INTO SUPERVISED TTEST
 
-  ### 3.	T-test
+  ### 3.	T-test (volcano plot - or heatmap of most differentially genes.  tOP GENES HERE COULD GO TO ipa
    (Second level UI: enter or choose different genes)
     (1). To associate the APOC2 expression alternation with frequent mutant genes (11 genes) in AML. (The genes are FLT3, TP53, WT1, IDH1, IDH2, CEBPA, RUNX1, NRAS, TET2, NPMI, DNMT3A) (gene wild type vs mutant, compare the expression level of APOC2) 
     (2). To associate the APOC2 gene expression alternation with MLL rearrangement (looking for patients’ clinical data) MLL rearrangement vs. no rearrangement compare the expression level of APOC2)
