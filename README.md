@@ -8,7 +8,7 @@ Acute Myeloid Leukemia (AML) is a devastating hematologic malignancy that affect
   2.	Look at the APOC2 gene upstream genomic alternation in AML to see if it’s associated with the MLL rearrangement.
   
 ## Datasets:
-  ### 1.	TCGA (200 cases)
+  ### 1.	TCGA (200 cases)(START WITH THIS DATASET)
     Repositories
     Data Category：Transcriptome profiling data
     What’s the different in Workflow type？
@@ -48,10 +48,7 @@ DC: You need to identify and label your samples based on expression level of APO
 
   ### 3.	T-test (volcano plot - or heatmap of most differentially genes.  tOP GENES HERE COULD GO TO ipa
    (Second level UI: enter or choose different genes)
-    (1). To associate the APOC2 expression alternation with frequent mutant genes (11 genes) in AML. (The genes are FLT3, TP53, WT1, IDH1, IDH2, CEBPA, RUNX1, NRAS, TET2, NPMI, DNMT3A) (gene wild type vs mutant, compare the expression level of APOC2) 
-    (2). To associate the APOC2 gene expression alternation with MLL rearrangement (looking for patients’ clinical data) MLL rearrangement vs. no rearrangement compare the expression level of APOC2)
-
-   ### 4.	Conclusion
-  Gene regulation signature of the three datasets
-  OR
-  Use Venn graph to show the regulated genes in three different datasets; and presented as bar graph to show the fold change.
+    (1). To associate the APOC2 expression alternation with other genes in dataset, using T-test. 
+    (2). Use heatmap to show the most differentially gene, and go to IPA
+   
+   
