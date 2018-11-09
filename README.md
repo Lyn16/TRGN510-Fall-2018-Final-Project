@@ -11,11 +11,14 @@ Acute Myeloid Leukemia (AML) is a devastating hematologic malignancy that affect
   ### 1.	TCGA (200 cases)(START WITH THIS DATASET)
     Repositories
     Data Category：Transcriptome profiling data
+       screem condition: 
+            cases: program:TCGA; Project:TCGA-LAML; Disease Type: Myeloid Leukemia
+            files: Transcriptome Profiling; RNA-Seq; HTSeq-FPKM
 https://portal.gdc.cancer.gov/repository?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22Biospecimen%22%2C%22Clinical%22%2C%22Combined%20Nucleotide%20Variation%22%2C%22Copy%20Number%20Variation%22%2C%22DNA%20Methylation%22%2C%22Raw%20Sequencing%20Data%22%2C%22Simple%20Nucleotide%20Variation%22%2C%22Transcriptome%20Profiling%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Gene%20Expression%20Quantification%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.experimental_strategy%22%2C%22value%22%3A%5B%22RNA-Seq%22%5D%7D%7D%5D%7D
 
    ### 2.	TARGET (156 cases)
     Repositories
-    Data Category：Transcriptome profiling data
+    Data Category：Transcriptome profiling data      
 https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22cases.project.project_id%22%2C%22value%22%3A%5B%22TARGET-AML%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.access%22%2C%22value%22%3A%5B%22open%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22Transcriptome%20Profiling%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Gene%20Expression%20Quantification%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.experimental_strategy%22%2C%22value%22%3A%5B%22RNA-Seq%22%5D%7D%7D%5D%7D&searchTableTab=cases
 
   ### 3.	LAML-US/CN/KR
