@@ -5,3 +5,4 @@ import re
 for line in fileinput.input(['/Users/lyn/Final_Project/Step2.Looking up Gene name in Homo Sapiens file/gene_id.txt']):
     text_in_columns = re.findall('(^..*)\.',line)
     print text_in_columns[0]
+#python text_in_columns[0] > gene_id withoutdot.txt to pipeout the result to a txt.#
