@@ -14,26 +14,22 @@ APOC2<-genes1["ENSG00000234906",]
 genes1["APOC2",]<-APOC2
 quantile(APOC2)
 highexpression<-which(APOC2 > 0.4639374)
-#highexpression_patients<-colnames(genes1[highexpression])
+
 lowexpression<-which(APOC2 <= 0.05992213 )
 mediumexpression<-which(APOC2<=0.4639374 & APOC2>0.05992213)
-#lowexpression_paitents<-colnames(genes1[lowexpression])
+
 genes1["APOC2",]<-replace(genes1["APOC2",], (highexpression), "HIGH")
 genes1["APOC2",]<-replace(genes1["APOC2",], (lowexpression), "LOW")
 genes1["APOC2",]<-replace(genes1["APOC2",], (mediumexpression), "MEDIUM")
-
-#mediumexpression_patients<-colnames(genes1[-c(lowexpression,highexpression)])
-
-#groupCodes<-c(highexpression_patients, lowexpression_paitents, mediumexpression_patients)
+genes1<-genes1[-"APOC2",]
 
 #Hiercarchical Clusting#
 genes1_transsample_all<-t(genes1)
-
-#genes1_transsample <- t(genes1[c(rep(FALSE,19),TRUE), ])
 colorCodes<- c(HIGH ="red", LOW = "green", MEDIUM = "orange")
 groupCodes<- genes1_transsample_all[,"APOC2"]
 clusters1 <- hclust(dist(genes1_transsample_all))
 plot(clusters1)
+
 #Log transform the data#
 library("dendextend")
 dend <-as.dendrogram(clusters1)
