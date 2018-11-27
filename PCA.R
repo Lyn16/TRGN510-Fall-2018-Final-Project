@@ -4,6 +4,8 @@ library("ggplot2")
 library("dendextend")
 library("colorspace")
 library("RColorBrewer")
+library("plotly")
+
 setwd("/Users/lyn/Final_Project/Step3. Data analysis")
 samples1<-read.csv("/Users/lyn/Final_Project/Step3. Data analysis/patient_sample.csv", header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, row.names = 2)
 genes1<-read.csv("/Users/lyn/Final_Project/TCGA_AML_mRNA_data_for_analysis.csv", header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, row.names = 2)
@@ -19,23 +21,12 @@ sample_apoc2_levels<-APOC2_expression_level
 sample_apoc2_value<-APOC2_expression_value
 samples1_apoc2_levels<-cbind(samples1,sample_apoc2_levels)
 samples1<-cbind(samples1_apoc2_levels, sample_apoc2_value)
-#PCA##need to understand more about the pca process. Data should be fine#
+
+#PCA#
 min(genes1[genes1>0])
 genes1.log<-log2(genes1+0.0005565771)
-#genes1.log.small <- genes1.log[seq(1, nrow(genes1.log), 20), ]
-#pca1<- prcomp(genes1.log.small,center = TRUE,scale. = TRUE)
 pca1<- prcomp(genes1.log,center = TRUE,scale. = TRUE)
-#rotatation<-data.frame(Sample = row.names(pca1$rotation),pca1$rotation[,1:6],row.names = NULL)
 
-#std_dev1 <- pca1$sdev
-#pr_var1 <- std_dev1^2
-#pr_var1[1:10]
-#prop_varex1 <- pr_var1/sum(pr_var1)
-#plot(prop_varex1, xlab = "Principal Component",
-     #ylab = "Proportion of Variance Explained",
-     #type = "b")
-
-library(plotly)
 #make it an interactive 3D chart#
 pcadf1<-data.frame(pca1$rotation)
 samples1$patients<-rownames(samples1)
@@ -48,7 +39,7 @@ pcaplot<-plot_ly(samples1_pca, x = ~PC1, y = ~PC2, z = ~PC3,marker = list(symbol
                       zaxis = list(title = 'PC3')))
 pcaplot
 
-#make it a 2D chart#
+#make it a 2D chart, Change the size according to the expression value#
 samples1_pca$APOC2_expression = as.numeric(levels(samples1_pca$APOC2_expression))[samples1_pca$APOC2_expression]
 ggplot(samples1_pca, aes(x = PC2, y = PC3, col = APOC2_levels))+
   geom_point(aes(color = APOC2_levels,shape = APOC2_levels, size = APOC2_expression))+
