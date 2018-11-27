@@ -49,7 +49,7 @@ DC: You need to identify and label your samples based on expression level of APO
 ## Plans for the Week 11/26/18-12/1/18
     (1). Put all the element above in a shiny app.
     (2). In shiny app, users are able to choose a range of genes that show in the heatmap.
-    (3). If there is enough time, i will add a volcano plot to the app.
+    (3). If there is enough time, i will add a dendrogram along with heatmap, and add a volcano plot to the app.
     
    
    
