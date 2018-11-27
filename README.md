@@ -41,9 +41,15 @@ DC: You need to identify and label your samples based on expression level of APO
    
    above HERE - IS QC TO MAKE SURE THERE ARE NO ARTIFACTS, REMOVE OR ADJUST FOR ANY (ETHNCIITY, OR SOMETHING ELSE, AND TAKE REMAINING SAMPLES INTO SUPERVISED TTEST
 
-  ### 3.	T-test (volcano plot - or heatmap of most differentially genes.  tOP GENES HERE COULD GO TO ipa
+  ### 3.	T-test (volcano plot - or heatmap of most differentially genes.  TOP GENES HERE COULD GO TO IPA)
    (Second level UI: enter or choose different genes)
-    (1). To associate the APOC2 expression alternation with other genes in dataset, using T-test. 
+    (1). To associate the APOC2 expression alternation with other genes in dataset, using T-test. (also tried Mann Whitney U test, but get a even larger data pool )
     (2). Use heatmap to show the most differentially gene, and go to IPA
+    
+## Plans for the Week 11/26/18-12/1/18
+    (1). Put all the element above in a shiny app.
+    (2). In shiny app, users are able to choose a range of genes that show in the heatmap.
+    (3). If there is enough time, i will add a volcano plot to the app.
+    
    
    
