@@ -8,7 +8,7 @@ Acute Myeloid Leukemia (AML) is a devastating hematologic malignancy that affect
   2.	Look at the APOC2 gene upstream genomic alternation in AML to see if it’s associated with the MLL rearrangement.
   
 ## Datasets:
-  ### 1.	TCGA (200 cases)(START WITH THIS DATASET)
+  ### TCGA (200 cases)(START WITH THIS DATASET)
     Repositories
     Data Category：Transcriptome profiling data
        screem condition: 
@@ -16,18 +16,7 @@ Acute Myeloid Leukemia (AML) is a devastating hematologic malignancy that affect
             files: Transcriptome Profiling; RNA-Seq; HTSeq-FPKM
 https://portal.gdc.cancer.gov/repository?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22Biospecimen%22%2C%22Clinical%22%2C%22Combined%20Nucleotide%20Variation%22%2C%22Copy%20Number%20Variation%22%2C%22DNA%20Methylation%22%2C%22Raw%20Sequencing%20Data%22%2C%22Simple%20Nucleotide%20Variation%22%2C%22Transcriptome%20Profiling%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Gene%20Expression%20Quantification%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.experimental_strategy%22%2C%22value%22%3A%5B%22RNA-Seq%22%5D%7D%7D%5D%7D
 
-   ### 2.	TARGET (156 cases)
-    Repositories
-    Data Category：Transcriptome profiling data      
-https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22cases.project.project_id%22%2C%22value%22%3A%5B%22TARGET-AML%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.access%22%2C%22value%22%3A%5B%22open%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22Transcriptome%20Profiling%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Gene%20Expression%20Quantification%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.experimental_strategy%22%2C%22value%22%3A%5B%22RNA-Seq%22%5D%7D%7D%5D%7D&searchTableTab=cases
-
-  ### 3.	LAML-US/CN/KR
-https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22specimenType%22:%7B%22is%22:%5B%22Primary%20Blood%20Derived%20Cancer%20-%20Peripheral%20Blood%22%5D%7D,%22projectCode%22:%7B%22is%22:%5B%22LAML-US%22%5D%7D%7D%7D&files=%7B%22from%22:1,%22size%22:25%7D
-
 ## Proposed Analysis
-Looking in at least 3 different high-quality studies, in each study; 
-
-(First level UI: choose which dataset)
 
 DC: You need to identify and label your samples based on expression level of APOC.  
 
@@ -36,8 +25,8 @@ DC: You need to identify and label your samples based on expression level of APO
     (1). To study the downstream signaling pathway that are activated/inhibited by the APOC2 expression alternation in AML.
     (2). To look at the APOC2 gene upstream genomic alternation in AML.
 
-  ### 2.	Conduct a PCA for each dataset to show that some components control the expression level of APOC2 (maybe not)
-   (Group setting: Top 25% of APOC2 expression level population; bottom 25% APOC2 expression level population; The rest of the population.)
+  ### 2.	Conduct a PCA for each dataset to show that some components control the expression level of APOC2 
+   (Group setting: Top 25% of APOC2 expression level population; bottom 25% APOC2 expression level population; The rest of the population.) change color according to several classification.
    
    above HERE - IS QC TO MAKE SURE THERE ARE NO ARTIFACTS, REMOVE OR ADJUST FOR ANY (ETHNCIITY, OR SOMETHING ELSE, AND TAKE REMAINING SAMPLES INTO SUPERVISED TTEST
 
@@ -48,8 +37,14 @@ DC: You need to identify and label your samples based on expression level of APO
     
 ## Plans for the Week 11/26/18-12/1/18
     (1). Put all the element above in a shiny app.
-    (2). In shiny app, users are able to choose a range of genes that show in the heatmap.
-    (3). If there is enough time, i will add a dendrogram along with heatmap, and add a volcano plot to the app.
+    (2). If there is enough time, i will add a dendrogram along with heatmap (I gave up the volcano plot part).
+
+## List for all the materials in this respository.
+    (1). A markdown file  for all the steps and figures of this final project.
+    (2). A R script for the shiny app.
+    (3). Three python file for the process to make the downloaded data can be used for analysis.
+    (4). HTML address for the markdown page:
+    (5). HTML address for the shiny app:
     
    
    
