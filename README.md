@@ -41,10 +41,15 @@ DC: You need to identify and label your samples based on expression level of APO
 
 ## List for all the materials in this respository.
     (1). A markdown file  for all the steps and figures of this final project.
-    (2). A R script for the shiny app.
+         rmd file: 
+    (2). A R script for the shiny app:
+         r file: 
     (3). Three python file for the process to make the downloaded data can be used for analysis.
-    (4). HTML address for the markdown page:
-    (5). HTML address for the shiny app:
+         to look up gene name according to gene ID:
+         to make short dash into underscore:
+         to delete the dot:
+    (4). HTML address for the markdown page: check out: http://rpubs.com/Lyn16/TRGN510
+    (5). HTML address for the shiny app: pending to publish.
     
    
    
